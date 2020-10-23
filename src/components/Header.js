@@ -4,8 +4,14 @@ import './Header.css'
 
 export default function Header() {
   return (
-    <div className="nav-bar">
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <div>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        style={{ backgroundColor: "#232a33" }}
+        bg="dark"
+        variant="dark"
+      >
         <Navbar.Brand href="#home">DSF</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

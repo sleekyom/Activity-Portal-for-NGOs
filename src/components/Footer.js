@@ -19,14 +19,54 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-row">
-        <div className="footer-link-column">
-          
+        <div className="footer-link-column contact">
+          <ul>
+            <h4>Heading 1</h4>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
         </div>
-        <div className="footer-link-column"></div>
-        <div className="footer-link-column"></div>
+        <div className="footer-link-column article">
+          <ul>
+            <h4>Article</h4>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
+        </div>
+        <div className="footer-link-column">
+          <ul>
+            <h4>News</h4>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
+        </div>
       </div>
       <div className="social-media-row">
-        
+        <h1>Follow Us</h1>
+        <a className="btn btn-icon btn-facebook" href="https://codepen.io/davidpottrell/pen/MYabyp">
+          <i class="fa fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a className="btn btn-icon btn-twitter" href="https://codepen.io/davidpottrell/pen/MYabyp">
+          <i class="fa fa-twitter"></i>
+          <span>Twitter</span>
+        </a>
+        <a className="btn btn-icon btn-pinterest" href="https://codepen.io/davidpottrell/pen/MYabyp">
+          <i class="fa fa-pinterest"></i>
+          <span>Pinterest</span>
+        </a>
+        <a className="btn btn-icon btn-linkedin" href="https://codepen.io/davidpottrell/pen/MYabyp">
+          <i class="fa fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://shopgrad.com/"> Shopgrad.com</a>
       </div>
     </div>
   );

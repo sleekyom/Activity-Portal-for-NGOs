@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from "react-bootstrap";
+import './Carousel.css';
 
 export default function CarouselPage() {
   return (
@@ -11,7 +12,7 @@ export default function CarouselPage() {
             src="https://cdn.pixabay.com/photo/2020/04/07/13/18/mist-5013325_1280.jpg"
             alt="First slide"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="caption">
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
