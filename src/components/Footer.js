@@ -46,26 +46,26 @@ export default function Footer() {
       </div>
       <div className="social-media-row">
         <h1>Follow Us</h1>
-        <a className="btn btn-icon btn-facebook" href="https://codepen.io/davidpottrell/pen/MYabyp">
-          <i class="fa fa-facebook"></i>
+        <a className="btn btn-icon btn-facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-facebook"></i>
           <span>Facebook</span>
         </a>
-        <a className="btn btn-icon btn-twitter" href="https://codepen.io/davidpottrell/pen/MYabyp">
-          <i class="fa fa-twitter"></i>
+        <a className="btn btn-icon btn-twitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-twitter"></i>
           <span>Twitter</span>
         </a>
-        <a className="btn btn-icon btn-pinterest" href="https://codepen.io/davidpottrell/pen/MYabyp">
-          <i class="fa fa-pinterest"></i>
+        <a className="btn btn-icon btn-pinterest" href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-pinterest"></i>
           <span>Pinterest</span>
         </a>
-        <a className="btn btn-icon btn-linkedin" href="https://codepen.io/davidpottrell/pen/MYabyp">
-          <i class="fa fa-linkedin"></i>
+        <a className="btn btn-icon btn-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i className="fa fa-linkedin"></i>
           <span>LinkedIn</span>
         </a>
       </div>
 
-      <div class="footer-copyright text-center py-3">
-        © 2020 Copyright:
+      <div className="footer-copyright text-center py-3">
+        © {new Date().getFullYear()} Copyright
         <a href="https://shopgrad.com/"> Shopgrad.com</a>
       </div>
     </div>
