@@ -1,0 +1,16 @@
+.base-container{
+  background-color: rgb(66, 61, 61);
+}
+
+.form-group{
+  padding: 10px
+}
+
+.btn{
+  background-color: rgb(236, 230, 230);
+}
+
+
+.social-media-login{
+  margin-top: 20px;
+}
