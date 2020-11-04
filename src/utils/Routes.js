@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "../components/HomePage";
+import SuggestionForm from "../components/SuggestionForm";
 import AboutUs from "../components/Pages/AboutUs";
 import BlogPost from "../components/Pages/BlogPost";
 import ErrorPage from "../components/Pages/ErrorPage";
@@ -21,9 +22,12 @@ export default function Routes() {
       <Route path="/about-us/history">
         <AboutUs />
       </Route>
-      
+
       <Route path="/blogpost">
         <BlogPost />
+      </Route>
+      <Route path="/suggestionform">
+        <SuggestionForm />
       </Route>
       <Route path="/login">
         <Login />

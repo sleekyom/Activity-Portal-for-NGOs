@@ -29,7 +29,10 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link to={currentUser ? "/blogpost" : "/login"} className="nav-link">
+            <Link
+              to={currentUser ? "/blogpost" : "/login"}
+              className="nav-link"
+            >
               Blog
             </Link>
             <NavDropdown title="About Us" id="collasible-nav-dropdown">
@@ -51,8 +54,15 @@ export default function Header() {
                 Future Projects
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action/3.3">Contact Us</Nav.Link>
-            <Nav.Link href="#action/3.3">Donation</Nav.Link>
+            <Link className="nav-link" to="/contactus">
+              Contact Us
+            </Link>
+            <Link className="nav-link" to="/donation">
+              Donation
+            </Link>
+            <Link className="nav-link" to="/suggestionform">
+              Suggestion
+            </Link>
           </Nav>
           <Nav>
             <Link to="/login" className="nav-link">
