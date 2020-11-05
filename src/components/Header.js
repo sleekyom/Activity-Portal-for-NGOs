@@ -1,19 +1,17 @@
-import React from 'react';
+import React from "react";
 import { useSelector } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import './Header.css'
-import { Link } from 'react-router-dom';
-import { selectCurrentUser } from '../redux/user/userSelector';
-
+import "./Header.css";
+import { Link } from "react-router-dom";
+import { selectCurrentUser } from "../redux/user/userSelector";
 
 export default function Header() {
-  
-   const { currentUser } = useSelector(
-     createStructuredSelector({
-       currentUser: selectCurrentUser,
-     })
-   );
+  const { currentUser } = useSelector(
+    createStructuredSelector({
+      currentUser: selectCurrentUser,
+    })
+  );
   return (
     <div>
       <Navbar
@@ -39,20 +37,20 @@ export default function Header() {
               <Link className="dropdown-item" to="/about-us/history">
                 History
               </Link>
-              <Link className="dropdown-item" to="/about-us/stakeholder">
+              <Link className="dropdown-item" to="/about-us/stakeholders">
                 Stakeholder
               </Link>
             </NavDropdown>
             <NavDropdown title="Projects" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <Link className="dropdown-item" to="/projects/past-projects">
                 Past Projects
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
+              </Link>
+              <Link className="dropdown-item" to="/projects/ongoing-projects">
                 Ongoing Projects
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Future Projects
-              </NavDropdown.Item>
+              </Link>
+              <Link className="dropdown-item" to="/projects/upcoming-projects">
+                Up Coming Projects
+              </Link>
             </NavDropdown>
             <Link className="nav-link" to="/contactus">
               Contact Us
