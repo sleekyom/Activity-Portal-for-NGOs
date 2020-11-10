@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import HomePage from "../components/HomePage";
-import SuggestionForm from "../components/SuggestionForm";
+import HomePage from "../components/Pages/HomePage";
+import SuggestionForm from "../components/Pages/SuggestionForm";
 import History from "../components/Pages/History";
 import BlogPost from "../components/Pages/BlogPost";
 import Stakeholders from "../components/Pages/Stakeholders";

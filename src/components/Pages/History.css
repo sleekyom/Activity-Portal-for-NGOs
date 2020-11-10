@@ -1,0 +1,27 @@
+.jumbotron {
+  background-image: url(https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.history {
+  background-color: #0dd664;
+}
+
+.history-title {
+  display: flex;
+}
+
+#history-container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 50px 200px;
+  background-color: #0dd664;
+}
+
+.jumb-top-container h1,
+p {
+  background-color: none !important;
+  color: black;
+}

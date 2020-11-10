@@ -1,16 +1,18 @@
-.base-container{
-  background-color: rgb(66, 61, 61);
+.base-container {
+  background-color: #0dd664;
+  display: flex;
 }
 
-.form-group{
-  padding: 10px
-}
-
-.btn{
-  background-color: rgb(236, 230, 230);
-}
-
-
-.social-media-login{
+.social-media-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 20px;
+  height: 400px;
+  width: 100%;
+}
+
+.social-media-login h1 {
+  color: black;
 }

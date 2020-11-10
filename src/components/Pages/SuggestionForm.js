@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, InputGroup, FormControl } from "react-bootstrap";
-import { firestore } from "../firebase/db";
-import { selectCurrentUser } from "../redux/user/userSelector";
+import { firestore } from "../../firebase/db";
+import { selectCurrentUser } from "../../redux/user/userSelector";
 import { useSelector } from "react-redux";
 import { createStructuredSelector } from "reselect";
 

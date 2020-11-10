@@ -1,0 +1,21 @@
+.blogpost-row {
+  margin: 20px 54px;
+}
+
+.card {
+  border: 0;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card-footer {
+  display: flex;
+  padding: 0.35rem 1rem;
+  justify-content: flex-end;
+}
+
+body {
+  line-height: 1.2;
+}

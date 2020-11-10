@@ -1,0 +1,33 @@
+.container {
+  background-color: #0dd664;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px 54px;
+  align-items: center;
+}
+
+.project-description {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.project-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.btn {
+  background-color: black !important;
+  border: none;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #0dd664;
+}
