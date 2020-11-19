@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 import HomePage from "../components/Pages/HomePage";
 import SuggestionForm from "../components/Pages/SuggestionForm";
 import History from "../components/Pages/History";
@@ -12,9 +12,18 @@ import ContactUs from "../components/Pages/ContactUs";
 import Donation from "../components/Pages/Donation";
 import UpcomingProjects from "../components/Pages/UpcomingProjects";
 import Login from "../components/login/Login";
+import { useSelector } from "react-redux";
+import { createStructuredSelector } from "reselect";
 import { Register } from "../components/login/Register";
+import { selectCurrentUser } from "../redux/user/userSelector";
 
-export default function Routes() {
+export default function Routes({ currentLink }) {
+  const { currentUser } = useSelector(
+    createStructuredSelector({
+      currentUser: selectCurrentUser,
+    })
+  );
+
   return (
     <Switch>
       <Route exact path="/">
@@ -49,24 +58,40 @@ export default function Routes() {
       </Route>
 
       {/* Donation Page*/}
-      <Route path="/donation">
-        <Donation />
-      </Route>
+      <Route
+        path="/donation"
+        render={(props) =>
+          !currentUser ? <Redirect to="/login" /> : <Donation {...props} />
+        }
+      />
 
       {/* Suggestion Page */}
-      <Route path="/suggestionform">
-        <SuggestionForm />
-      </Route>
+      <Route
+        path="/suggestionform"
+        render={(props) =>
+          !currentUser ? (
+            <Redirect to="/login" />
+          ) : (
+            <SuggestionForm {...props} />
+          )
+        }
+      />
 
       {/* Login Page */}
-      <Route path="/login">
-        <Login />
-      </Route>
+      <Route
+        path="/login"
+        render={(props) =>
+          currentUser ? <Redirect to={currentLink} /> : <Login {...props} />
+        }
+      />
 
       {/* Register */}
-      <Route path="/register">
-        <Register />
-      </Route>
+      <Route
+        path="/register"
+        render={(props) =>
+          currentUser ? <Redirect to={currentLink} /> : <Register {...props} />
+        }
+      />
 
       {/* Error Page */}
       <Route>

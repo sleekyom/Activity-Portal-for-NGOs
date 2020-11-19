@@ -1,12 +1,16 @@
-*{
-  margin: 0;
+.container {
+  padding: 40px;
 }
 
-div .caption{
+div .caption {
   display: absolute;
   text-align: center;
 }
 
-.Carousel.Caption{
+.Carousel.Caption {
   text-align: center;
+}
+
+.carousel-caption {
+  top: 50%;
 }

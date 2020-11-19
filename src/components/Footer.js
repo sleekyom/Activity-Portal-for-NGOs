@@ -294,8 +294,8 @@ export default function Footer() {
       </div>
 
       <div className="footer-copyright text-center py-3">
-        © {new Date().getFullYear()} Copyright
-        <a href="https://shopgrad.com/"> Shopgrad.com</a>
+        © 2018 - {new Date().getFullYear()} Copyright
+        <a href="/"> XYZ.com</a>
       </div>
     </div>
   );

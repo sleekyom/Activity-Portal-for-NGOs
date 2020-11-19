@@ -1,7 +1,7 @@
 /* footer section */
 .footer-section {
-  background-color: #232a33;
-  margin-top: 30px;
+  background-color: #343a40;
+  padding-top: 30px;
 }
 
 .partner-row {
@@ -9,14 +9,6 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 20px;
-}
-
-.partner-logo {
-  /* height: 80px;
-  width: 280px;
-  margin: 5px; */
-  /* border-radius: 5px; */
-  /* border: 1px solid #0dd664; */
 }
 
 /* Social media icons */
