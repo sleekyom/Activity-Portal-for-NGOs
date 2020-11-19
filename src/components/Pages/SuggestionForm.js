@@ -4,6 +4,7 @@ import { firestore } from "../../firebase/db";
 import { selectCurrentUser } from "../../redux/user/userSelector";
 import { useSelector } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import "./SuggestionForm.css";
 
 export default function Suggestionform() {
   const [formState, setFormstate] = useState({
@@ -58,12 +59,16 @@ export default function Suggestionform() {
     }
   };
 
-  console.log(currentUser);
-
   return (
     <div>
-      <div>
-        <label htmlFor="basic-url">Title</label>
+      <div className="container">
+        <label htmlFor="basic-url">Suggestion Form</label>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia
+          placeat odit maiores incidunt, iste accusantium? Fugiat velit esse
+          iure odio corporis, repudiandae tenetur rem suscipit non ratione modi
+          ipsa.
+        </p>
         <InputGroup className="mb-3">
           <FormControl
             placeholder="title"
@@ -86,6 +91,7 @@ export default function Suggestionform() {
           />
         </InputGroup>
         <Button
+          className="btn1"
           variant="outline-dark"
           disabled={!title || !message}
           onClick={handleSave}

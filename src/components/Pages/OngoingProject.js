@@ -6,7 +6,7 @@ import "./OngoingProjects.css";
 export default function OngoingProject() {
   return (
     <div>
-      <div className="container">
+      <div className="container ong-prj">
         <div className="project-row">
           <div className="project-description">
             <div className="project-title">

@@ -1,3 +1,17 @@
 .card-deck {
   padding-bottom: 30px;
 }
+
+.donation {
+  /* background-color: #0dd664; */
+}
+
+@media (min-width: 576px) {
+  card-deck .card {
+    margin-right: 0;
+  }
+}
+
+.card-deck .card {
+  margin-right: 0;
+}

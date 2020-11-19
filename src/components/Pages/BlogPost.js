@@ -4,11 +4,12 @@ import "./Blogpost.css";
 
 export default function BlogPost() {
   return (
-    <div className="blogpost-section">
+    <div className="container blogpost-section">
       <div className="blogpost-row">
         <CardDeck>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -30,6 +31,7 @@ export default function BlogPost() {
           </Card>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -51,6 +53,7 @@ export default function BlogPost() {
           </Card>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -72,6 +75,7 @@ export default function BlogPost() {
           </Card>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -98,6 +102,7 @@ export default function BlogPost() {
         <CardDeck>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -119,6 +124,7 @@ export default function BlogPost() {
           </Card>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -140,6 +146,7 @@ export default function BlogPost() {
           </Card>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"
@@ -147,8 +154,8 @@ export default function BlogPost() {
             <Card.Body>
               <Card.Title>Post 7</Card.Title>
               <Card.Text>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Provident, minus. Lorem ipsum dolor sit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+                error.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -161,6 +168,7 @@ export default function BlogPost() {
           </Card>
           <Card>
             <Card.Img
+              className="zoom"
               variant="top"
               height="300"
               src="https://cdn.pixabay.com/photo/2020/09/02/18/03/girl-5539094_1280.jpg"

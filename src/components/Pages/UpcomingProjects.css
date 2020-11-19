@@ -1,12 +1,12 @@
-.container {
-  background-color: #0dd664;
+.upc-prj {
+  padding: 30px;
 }
 
 .project-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 40px 54px;
+  margin: 40px 30px;
   align-items: center;
 }
 
@@ -27,5 +27,4 @@
 
 .btn a {
   text-decoration: none;
-  color: #0dd664;
 }

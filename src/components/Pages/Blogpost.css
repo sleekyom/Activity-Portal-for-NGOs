@@ -4,6 +4,11 @@
 
 .card {
   border: 0;
+  overflow: hidden;
+}
+
+.card-title {
+  color: black;
 }
 
 .card-text {
@@ -18,4 +23,17 @@
 
 body {
   line-height: 1.2;
+}
+
+img.zoom:hover {
+  transform: scale(2.25);
+  height: 280px;
+  -webkit-transform: scale(2.25);
+  -moz-transform: scale(2.25);
+  -ms-transform: scale(2.25);
+  -o-transform: scale(2.25);
+}
+
+.card-img-top {
+  overflow: hidden;
 }

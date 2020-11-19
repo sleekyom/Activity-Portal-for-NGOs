@@ -6,7 +6,7 @@ import "./UpcomingProjects.css";
 export default function UpcomingProjects() {
   return (
     <div>
-      <div className="container">
+      <div className="container upc-prj">
         <div className="project-row">
           <div className="project-description">
             <div className="project-title">

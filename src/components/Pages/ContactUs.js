@@ -3,7 +3,7 @@ import "./ContactUs.css";
 
 export default function ContactUs() {
   return (
-    <div className="container">
+    <div className="container cont-us">
       <div className="contact-us">
         <div className="address-container">
           You can find us here

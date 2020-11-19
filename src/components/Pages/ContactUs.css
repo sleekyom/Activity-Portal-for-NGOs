@@ -5,8 +5,10 @@
   margin-top: 30px;
 }
 
-.container {
-  max-width: 100%;
+.cont-us {
+  background-color: #0dd664;
+  padding: 30px;
+  color: #212529;
 }
 
 .address-container {

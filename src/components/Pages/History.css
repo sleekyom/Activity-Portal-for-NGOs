@@ -5,7 +5,7 @@
 }
 
 .history {
-  background-color: #0dd664;
+  background-color: #212529;
 }
 
 .history-title {
@@ -17,11 +17,16 @@
   flex-direction: column;
   text-align: justify;
   padding: 50px 200px;
-  background-color: #0dd664;
+  background-color: #212529;
 }
 
 .jumb-top-container h1,
 p {
   background-color: none !important;
   color: black;
+  font-weight: 700;
+}
+
+body {
+  color: white;
 }

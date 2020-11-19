@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function PastProjects() {
   return (
-    <div className="container">
+    <div className="container past-prj">
       <div className="project-row">
         <div className="project-description">
           <div className="project-title">

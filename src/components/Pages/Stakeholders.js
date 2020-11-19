@@ -5,6 +5,7 @@ import "./Stakeholders.css";
 export default function Stakeholders() {
   return (
     <div className="container">
+      <h1>Meet the Stakeholders</h1>
       <div className="stakeholders-container">
         <Card style={{ width: "18rem" }}>
           <Card.Img
@@ -49,7 +50,6 @@ export default function Stakeholders() {
           </Card.Body>
         </Card>
       </div>
-
       <div className="stakeholders-container">
         <Card style={{ width: "18rem" }}>
           <Card.Img
