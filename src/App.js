@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import "./App.css";
 import Header from "./components/Header";
@@ -9,6 +9,7 @@ import { checkUserSession } from "./redux/user/userActions";
 function App() {
   const dispatch = useDispatch();
   const checkSession = () => dispatch(checkUserSession());
+  const [currentLink, setCurrentLink] = useState("/");
 
   useEffect(() => {
     checkSession();
@@ -17,8 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Routes />
+      <Header setCurrentLink={setCurrentLink} />
+      <Routes currentLink={currentLink} />
       <Footer />
     </div>
   );

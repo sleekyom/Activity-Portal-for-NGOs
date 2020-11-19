@@ -1,17 +1,22 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { selectCurrentUser } from "../redux/user/userSelector";
+import { signOutStart } from "../redux/user/userActions";
 
-export default function Header() {
+export default function Header({ setCurrentLink }) {
   const { currentUser } = useSelector(
     createStructuredSelector({
       currentUser: selectCurrentUser,
     })
   );
+
+  const dispatch = useDispatch();
+  const signOut = () => dispatch(signOutStart());
+
   return (
     <div>
       <Navbar
@@ -27,10 +32,7 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link
-              to={currentUser ? "/blogpost" : "/login"}
-              className="nav-link"
-            >
+            <Link to="/blogpost" className="nav-link">
               Blog
             </Link>
             <NavDropdown title="About Us" id="collasible-nav-dropdown">
@@ -55,20 +57,37 @@ export default function Header() {
             <Link className="nav-link" to="/contactus">
               Contact Us
             </Link>
-            <Link className="nav-link" to="/donation">
+            <Link
+              className="nav-link"
+              to="/donation"
+              onClick={() => setCurrentLink("/donation")}
+            >
               Donation
             </Link>
-            <Link className="nav-link" to="/suggestionform">
+            <Link
+              to={"/suggestionform"}
+              className="nav-link"
+              onClick={() => setCurrentLink("/suggestionform")}
+            >
               Suggestion
             </Link>
           </Nav>
           <Nav>
-            <Link to="/login" className="nav-link">
-              Login
-            </Link>
-            <Link to="/register" className="nav-link">
-              Register
-            </Link>
+            {currentUser ? (
+              <Link to="/" className="nav-link" onClick={signOut}>
+                Logout
+              </Link>
+            ) : (
+              <>
+                {" "}
+                <Link to="/login" className="nav-link">
+                  Login
+                </Link>
+                {/* <Link to="/register" className="nav-link">
+                  Register
+                </Link> */}
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
