@@ -54,9 +54,9 @@ export default function Header({ setCurrentLink }) {
                 Up Coming Projects
               </Link>
             </NavDropdown>
-            <Link className="nav-link" to="/contactus">
+            {/* <Link className="nav-link" to="/contactus">
               Contact Us
-            </Link>
+            </Link> */}
             <Link
               className="nav-link"
               to="/donation"

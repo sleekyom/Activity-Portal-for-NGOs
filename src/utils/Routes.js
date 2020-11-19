@@ -53,9 +53,9 @@ export default function Routes({ currentLink }) {
       </Route>
 
       {/* Contact - us */}
-      <Route path="/contactus">
+      {/* <Route path="/contactus">
         <ContactUs />
-      </Route>
+      </Route> */}
 
       {/* Donation Page*/}
       <Route
@@ -86,12 +86,12 @@ export default function Routes({ currentLink }) {
       />
 
       {/* Register */}
-      <Route
+      {/* <Route
         path="/register"
         render={(props) =>
           currentUser ? <Redirect to={currentLink} /> : <Register {...props} />
         }
-      />
+      /> */}
 
       {/* Error Page */}
       <Route>

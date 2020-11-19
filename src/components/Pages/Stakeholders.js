@@ -10,8 +10,9 @@ export default function Stakeholders() {
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
+            height="350"
             rounded
-            src="https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2017/08/12/18/31/male-2634974_1280.jpg"
           />
           <Card.Body>
             <Card.Title>John Joe</Card.Title>
@@ -24,8 +25,9 @@ export default function Stakeholders() {
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
+            height="350"
             rounded
-            src="https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2017/03/02/20/25/woman-2112292_1280.jpg"
           />
           <Card.Body>
             <Card.Title>Albert Lius</Card.Title>
@@ -38,8 +40,9 @@ export default function Stakeholders() {
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
+            height="350"
             rounded
-            src="https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2017/09/16/17/42/business-woman-2756210_1280.jpg"
           />
           <Card.Body>
             <Card.Title>Musa Gbadamosi</Card.Title>
@@ -54,8 +57,9 @@ export default function Stakeholders() {
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
+            height="350"
             rounded
-            src="https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2016/04/18/23/08/beautiful-1337737_1280.jpg"
           />
           <Card.Body>
             <Card.Title>Bruce Wayne</Card.Title>
@@ -68,8 +72,9 @@ export default function Stakeholders() {
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
+            height="350"
             rounded
-            src="https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2015/07/20/12/57/man-852766_1280.jpg"
           />
           <Card.Body>
             <Card.Title>Magus Teeth</Card.Title>
@@ -82,8 +87,9 @@ export default function Stakeholders() {
         <Card style={{ width: "18rem" }}>
           <Card.Img
             variant="top"
+            height="350"
             rounded
-            src="https://cdn.pixabay.com/photo/2018/03/02/10/03/wildlife-3192772_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2016/03/23/04/01/beautiful-1274056_1280.jpg"
           />
           <Card.Body>
             <Card.Title>Wasiu Ayinde</Card.Title>
